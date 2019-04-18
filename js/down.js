@@ -4,24 +4,25 @@
     if (PLIST_URL) {
       var link = "itms-services://?action=download-manifest&url=" + PLIST_URL;
       location.href = link;
+      // 提示正在安装
+      setTimeout(function() {
+        var eleTip = document.querySelector(".js-tip");
+        if (eleTip) {
+          eleTip.innerHTML = "正在安装，请按 Home 键在桌面查看";
+        }
+      }, 3500);
     }
   }
 
   function clickEvent() {
-    var btn = document.querySelector(".js-down");
-    if (btn) {
-      btn.addEventListener("touchstart", function(e) {
-        e.stopPropagation();
+    document.onclick = function(e) {
+      if (e.target.className.indexOf("js-down") > -1) {
+        e.preventDefault();
         download();
-        // 提示正在安装
-        setTimeout(function() {
-          var eleTip = document.querySelector(".js-tip");
-          if (eleTip) {
-            eleTip.innerHTML = "正在安装，请按 Home 键在桌面查看";
-          }
-        }, 3000);
-      });
-    }
+
+        return false;
+      }
+    };
   }
 
   // dom解析完
