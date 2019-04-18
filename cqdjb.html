@@ -5,32 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>下载游戏</title>
-  <style>
-    * {margin: 0; padding: 0;}
-    html {
-      font-size: 62.5%;
-    }
-    .btn-down {
-      display: block;
-      margin: 50px auto;
-      width: 80%;
-      height: 3em;
-      line-height: 3em;
-      background: #0391f0;
-      color: #fff;
-      border-radius: 10px;
-      font-size: 1.5em;
-      text-align: center;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="./download/static/css/download.css" />
   <script>
     var PLIST_URL = 'https://upload.zkyouxi.com/iosdownload/ipa/lczg_cqdjb.plist';
   </script>
   
 </head>
 <body>
-  <a href="#" class="btn-down js-down">免费安装</a>
+  <div class="main">
+    <div class="part1">
+      <div class="flex-row-end">
+        <img class="game-logo js-icon" src="./game/cqdjb/icon.png" alt="">
+        <div class="slogan-wrap ft-s0">
+          <div>
+            <h1 class="title js-title">游戏名称</h1>
+            <p class="slogan js-remark">带你走进不一样的上古蛮荒世界</p>
+          </div>
+          <div class="btn-group flex-between">
+            <div class="flex-row">
+              <a class="btn-connet bd-rad1 js-down" href="#">获取</a>
+              <p class="s-tip color-gray" style="margin-left: .2rem;">App内购买</p>
+            </div>
+            <a class="btn-download flex-center js-down" href="#">
+              ...
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-between">
+        <div class="start-wrap ft-s0">
+          <span class="score js-score">5.0</span>
+          <img class="starts" src="./download/static/image/starts.png" alt="">
+          <p class="s-score s-tip" style="text-align: left;">21.3万个评分</p>
+        </div>
+        <div>
+          <div class="l-tip"> #1</div>
+          <div class="s-tip">角色扮演游戏</div>
+        </div>
+        <div class="age">
+          <div class="l-tip">12+</div>
+          <div class="s-tip">年龄</div>
+        </div>
+      </div>
+    </div>
+    <div class="part2">
+      <img src="./download/static/image/process.png" alt="" class="process-img">
+    </div>
+  </div>
 
   <script src="./js/down.js"></script>
   <script>
