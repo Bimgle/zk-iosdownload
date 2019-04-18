@@ -1,0 +1,166 @@
+html {
+  font-size: 15.6vw;
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 60px;
+  }
+
+  .main {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+body,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.main {
+  padding: .3rem .18rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.flex-row-end {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+.ft-s0 {
+  font-size: 0;
+}
+
+.color-gray {
+  color: #8b8b90;
+}
+
+/* part1 */
+.part1 {
+  margin-bottom: .25rem;
+}
+
+.slogan-wrap  {
+  flex: 1;
+}
+.s-tip {
+  font-size: .10rem
+}
+
+.btn-download {
+  background-color: #3478f7;
+  padding: .02rem .1rem;
+  font-size: .1rem;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.game-logo {
+  display: inline-block;
+  width: 2.45rem;
+  height: 2.45rem;
+  margin: 0 .43rem 0 .14rem;
+}
+
+.title {
+  font-size: .5rem;
+  font-weight: 600;
+  margin: .16rem 0 0 0;
+}
+
+.slogan {
+  font-size: .26rem;
+  margin: .15rem 0 .34rem 0;
+  color: #8b8b90;
+}
+
+.btn-connet {
+  font-size: .30rem;
+  padding: .1rem .3rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #3478f7;
+}
+
+
+
+.bd-rad1 {
+  border-radius: .3rem;
+}
+
+.start-wrap {
+  margin: .2rem .14rem;
+  vertical-align: middle;
+}
+
+.score {
+  display: inline-block;
+  font-size: .4rem;
+  color: #8e8f93;
+}
+
+.l-tip {
+  text-align: center;
+  font-size: .4rem;
+  color: #8e8f93;
+}
+
+.s-tip {
+  text-align: center;
+  color: #cbcbcf;
+  font-size: .14rem;
+}
+
+.starts {
+  display: inline-block;
+  width: 2.5rem;
+  height: .34rem;
+  margin-left: .14rem;
+}
+
+/* part2 */
+.part2 {
+  padding: .28rem 0;
+}
+
+.process-img {
+  display: block;
+  width: 100%;
+}
