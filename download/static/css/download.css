@@ -72,9 +72,6 @@ h5 {
 }
 
 /* part1 */
-.part1 {
-  margin-bottom: .25rem;
-}
 
 .slogan-wrap  {
   flex: 1;
@@ -85,8 +82,10 @@ h5 {
 
 .btn-download {
   background-color: #3478f7;
-  padding: .02rem .1rem;
-  font-size: .1rem;
+  /* padding: .02rem .1rem; */
+  width: .4rem;
+  line-height: .4rem;
+  font-size: .3rem;
   border-radius: 50%;
   color: #fff;
   text-decoration: none;
@@ -156,9 +155,6 @@ h5 {
 }
 
 /* part2 */
-.part2 {
-  padding: .28rem 0;
-}
 
 .process-img {
   display: block;
