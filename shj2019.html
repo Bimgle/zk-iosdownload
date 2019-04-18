@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>下载游戏</title>
+  <style>
+    * {margin: 0; padding: 0;}
+    html {
+      font-size: 62.5%;
+    }
+    .btn-down {
+      display: block;
+      margin: 50px auto;
+      width: 80%;
+      height: 3em;
+      line-height: 3em;
+      background: #0391f0;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 1.5em;
+      text-align: center;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <a href="itms-services://?action=download-manifest&url=https://upload.zkyouxi.com/iosdownload/ipa/qyc_shj2019.plist" class="btn-down">免费安装</a>
+
+  <script>
+    var link = '#';
+
+    link = document.querySelector('.btn-down').href;
+    location.href = link;
+  </script>
+</body>
+</html>
