@@ -81,9 +81,6 @@ h5 {
 .slogan-wrap  {
   flex: 1;
 }
-.s-tip {
-  font-size: .10rem
-}
 
 .btn-download {
   background-color: #3478f7;
@@ -151,14 +148,14 @@ h5 {
 .s-tip {
   text-align: center;
   color: #cbcbcf;
-  font-size: .14rem;
+  font-size: .24rem;
 }
 
 .starts {
   display: inline-block;
   width: 2.5rem;
   height: .34rem;
-  margin-left: .14rem;
+  margin-left: .16rem;
 }
 
 /* part2 */
