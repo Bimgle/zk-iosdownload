@@ -24,19 +24,49 @@
       text-decoration: none;
     }
   </style>
+  <script>
+    var PLIST_URL = 'https://upload.zkyouxi.com/iosdownload/ipa/lczg_cqdjb.plist';
+  </script>
+  
 </head>
 <body>
-  <a href="itms-services://?action=download-manifest&url=https://upload.zkyouxi.com/iosdownload/ipa/lczg_cqdjb.plist" class="btn-down">免费安装</a>
+  <a href="#" class="btn-down js-down">免费安装</a>
 
+  <script src="./js/down.js"></script>
   <script>
-    var link = '#';
+    // download();
+    // function download() {
+    //   if (PLIST_URL) {
+    //     var link = 'itms-services://?action=download-manifest&url=' + PLIST_URL;
+    //     location.href = link;
+    //   }
+    // }
 
-    link = document.querySelector('.btn-down').href;
-    location.href = link;
+    // function clickEvent() {
+    //   var btn = document.querySelector('.js-down');
+    //   if (btn) {
+    //     btn.addEventListener('touchstart', function () {
+    //       download();
+    //       setTimeout(function () {  
+    //         var eleTip = document.querySelector('.js-tip');
+    //         if (eleTip) {
+    //           eleTip.innerHTML = '正在安装，请按 Home 键在桌面查看'; 
+    //         }
+    //       }, 3000);
+    //     }, true)
+    //   }
+    // }
 
-    // setTimeout(function () {  
-    //   location.href = './com.mobileprovision'
-    // }, 3000);
+    // document.ready = document.ready || function (callback) {
+    //   document.addEventListener('DOMContentLoaded', function () {
+    //     document.removeEventListener('DOMContentLoaded', arguments.callee, false);
+    //     callback();
+    //   }, false);
+    // }
+
+    // document.ready(function () {
+    //   clickEvent();
+    // })
   </script>
 </body>
 </html>
